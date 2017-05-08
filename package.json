@@ -11,7 +11,7 @@
     "mongoose": "4.5.9"
   },
   "scripts": {
-    "test": "mocha server/**/*.test.js",
+    "test": "export NODE_ENV=test && mocha server/**/*.test.js",
     "test:watch": "nodemon --exec 'yarn test'",
     "start": "node ./server/server.js"
   },
