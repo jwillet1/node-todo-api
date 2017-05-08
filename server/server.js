@@ -1,10 +1,10 @@
-var express = require('express');
-var bodyParser = require('body-parser');
-var ObjectID = require('mongodb').ObjectID;
+const express = require('express');
+const bodyParser = require('body-parser');
+const {ObjectID} = require('mongodb');
 
-var mongoose = require('./db/mongoose').mongoose;
-var Todo = require('./models/todo').Todo;
-var User = require('./models/user').User;
+const {mongoose} = require('./db/mongoose');
+const {Todo} = require('./models/todo');
+const {User} = require('./models/user');
 
 var app = express();
 const port = process.env.PORT || 8080;
